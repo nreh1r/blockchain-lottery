@@ -33,3 +33,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # blockchain-lottery
+This is the front-end portion of a blockchain lottery. The front-end uses Next.js, Moralis, and SCSS (with a little bit of Tailwind CSS just to experiment). To see the backend smart contracts for this project refer to the "blockchain-lottery-smartcontracts" repo.  
