@@ -1,0 +1,53 @@
+.container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 65%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: rgba(59, 130, 246, 0.75);
+    color: #fff;
+
+    .header {
+        font-size: 2rem;
+        background-color: rgb(59 130 246);
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .entrance_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 2rem;
+        
+    }
+
+    .subhead {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        width: 75%;
+        text-align: center;
+
+        @media screen and (max-width: 900px) {
+            width: 80%;
+        }
+    }
+
+    .recent {
+        margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 95%;
+    }
+}

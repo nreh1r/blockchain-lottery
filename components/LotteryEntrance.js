@@ -6,6 +6,7 @@ import { useMoralis } from "react-moralis"
 import { useEffect, useState } from "react"
 import { ethers } from "ethers"
 import { useNotification } from "web3uikit"
+import styles from "./LotteryEntrance.module.scss"
 
 export default function LotteryEntrance() {
     // Header passes up all the Metamask info to the MoralisProvider
@@ -98,12 +99,26 @@ export default function LotteryEntrance() {
     }
 
     return (
-        <div className="p-5">
-            Hi from lottery entrance
+        <div className={styles.container}>
+            <div className={styles.header}>
+                <h2>Hello and Welcome</h2>
+            </div>
+            <h3 className={styles.subhead}>
+                Hurry and enter now before you miss your chance! TIME IS ALMOST
+                UP!
+            </h3>
             {raffleAddress ? (
-                <div>
+                <div className={styles.entrance_container}>
+                    <div>
+                        Entrance Fee:{" "}
+                        {ethers.utils.formatUnits(entranceFee, "ether")}
+                    </div>
+                    <div>Number of Players : {numPlayers}</div>
+                    <div className={styles.recent}>
+                        Recent Winner: {recentWinner}
+                    </div>
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-auto"
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                         onClick={async function () {
                             // these functions come with onSuccess, onComplete, onError etc.
                             await enterRaffle({
@@ -124,12 +139,6 @@ export default function LotteryEntrance() {
                             <div>Enter Raffle</div>
                         )}
                     </button>
-                    <div>
-                        Entrance Fee:{" "}
-                        {ethers.utils.formatUnits(entranceFee, "ether")}
-                    </div>
-                    <div>Number of Players : {numPlayers}</div>
-                    <div>Recent Winner: {recentWinner}</div>
                 </div>
             ) : (
                 <div>No Raffle Address Detected</div>
