@@ -1,6 +1,6 @@
 # blockchain-lottery
 
-
+To see code for the smartcontracts please [click here](https://github.com/nreh1r/blockchain-lottery-smartcontracts)
 
 
 
