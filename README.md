@@ -9,6 +9,7 @@ This repository features the front end code for a block-chain lottery. The front
 - Moralis
 - Web 3 UI
 - JavaScript
+- SCSS
 
 ------------------------------------------------------------------------------
 
