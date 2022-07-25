@@ -2,10 +2,7 @@
 
 To see code for the smartcontracts please [click here](https://github.com/nreh1r/blockchain-lottery-smartcontracts)
 
-
-
-
-
+This repository features the front end code for a block-chain lottery. The front-end is built using Next.js, Moralis, and Web3 UI. I chose Next.js to develop this project to not only use the newest technology but also because Moralis and Web3 UI have very good integration with Next.js Moralis really does the heavy lifting when it comes to integrating a Web 3, block chain app, with a Web 2 frontend. It made creating all the UI very easy and made accessing the smart contract itself just as easy.
 
 ------------------------------------------------------------------------------
 
